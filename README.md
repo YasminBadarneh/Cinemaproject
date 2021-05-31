@@ -1,4 +1,4 @@
-# OCSF Mediator Example
+# Cinema Project
 
 ## Structure
 Pay attention to the three modules:
