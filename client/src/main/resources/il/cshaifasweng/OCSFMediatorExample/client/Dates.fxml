@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="screening_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.DatesController">
+   <children>
+      <TableView fx:id="screenings_table" layoutX="34.0" layoutY="76.0" prefHeight="179.0" prefWidth="467.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="screening_column" prefWidth="466.40001220703124" text="Screening Times" />
+        </columns>
+      </TableView>
+      <Button fx:id="cancelScreening_button" layoutX="415.0" layoutY="318.0" mnemonicParsing="false" onAction="#cancelScreening" prefHeight="31.0" prefWidth="119.0" text="Cancel Screening" />
+      <Button fx:id="editScreening_button" layoutX="225.0" layoutY="318.0" mnemonicParsing="false" onAction="#editDate" prefHeight="31.0" prefWidth="119.0" text="Edit Screening" />
+      <Button fx:id="addScreening_button" layoutX="25.0" layoutY="318.0" mnemonicParsing="false" onAction="#addScreening" prefHeight="31.0" prefWidth="111.0" text="Add Screening" />
+      <TextField fx:id="date_field" layoutX="34.0" layoutY="274.0" prefHeight="26.0" prefWidth="514.0" />
+      <Button fx:id="goToMoviesList" layoutX="5.0" layoutY="1.0" mnemonicParsing="false" onAction="#goback" text="Back" />
+      <Text fx:id="movie_text" layoutX="34.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" wrappingWidth="337.73672103881836">
+         <font>
+            <Font name="Bell MT Bold" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="615.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.MoviesListController">
+   <children>
+      <TableView fx:id="movies_table" layoutY="37.0" prefHeight="292.0" prefWidth="615.0">
+        <columns>
+          <TableColumn fx:id="MovieIm" prefWidth="300.0000101327896" text="Thumbnail" />
+          <TableColumn fx:id="EngName" minWidth="7.33331298828125" prefWidth="125.33331298828125" text="Movie Name " />
+            <TableColumn fx:id="HebName" prefWidth="91.99996948242188" text="Movie Name" />
+            <TableColumn fx:id="Price" prefWidth="98.00006103515625" text="price" />
+        </columns>
+      </TableView>
+      <Text fx:id="branch_text" layoutX="221.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="219.1516876220703" />
+      <Button fx:id="Back_button" layoutY="1.0" mnemonicParsing="false" onAction="#goToBranches" text="Back" />
+      <Button fx:id="moreDetails_button" layoutX="14.0" layoutY="370.0" mnemonicParsing="false" onAction="#goToMoreInfo" prefHeight="33.0" prefWidth="105.0" text="More Details" />
+      <Button fx:id="buyTicket_button" layoutX="164.0" layoutY="370.0" mnemonicParsing="false" onAction="#goToBuyTicket" prefHeight="33.0" prefWidth="98.0" text="Buy Ticket" />
+      <Button fx:id="editMovie_button" layoutX="336.0" layoutY="371.0" mnemonicParsing="false" onAction="#goToEditMovie" prefHeight="33.0" prefWidth="98.0" text="Edit Movie" />
+      <Button fx:id="addMovie_button" layoutX="476.0" layoutY="372.0" mnemonicParsing="false" onAction="#goToAddMovie" prefHeight="33.0" prefWidth="98.0" text="Add Movie" />
+   </children>
+</AnchorPane>
